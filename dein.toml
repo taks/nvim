@@ -55,3 +55,19 @@ hook_add = '''
   vmap s <Plug>(easymotion-bd-f2)
 '''
 
+[[plugins]]
+repo = 'dag/vim-fish'
+
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+hook_add = '''
+  let g:indent_guides_enable_on_vim_startup = 1
+  let g:indent_guides_guide_size = 1
+'''
+
+[[plugins]]
+repo = 'w0ng/vim-hybrid'
+
