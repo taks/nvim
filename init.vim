@@ -45,6 +45,9 @@ set fileencodings=utf-8,iso-2022-jp,sjis,euc-jp
 set expandtab
 set shiftwidth=2
 
+noremap ; :
+noremap : ;
+
 nnoremap j gj
 nnoremap k gk
 nnoremap gj j
