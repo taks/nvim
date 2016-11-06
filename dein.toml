@@ -9,6 +9,14 @@ build = 'make'
 repo = 'Shougo/denite.nvim'
 
 [[plugins]]
+repo = 'Shougo/neoyank.vim'
+hook_add = '''
+  nmap <Space> [unite]
+  nnoremap <silent> [unite]y :<C-u>Denite neoyank<CR>
+  nnoremap <silent> [unite]l :<C-u>Denite line<CR>
+'''
+
+[[plugins]]
 repo = 'Shougo/deoplete.nvim'
 hook_add = '''
   let g:deoplete#enable_at_startup = 1
