@@ -87,3 +87,10 @@ hook_add = '''
   let g:magit_default_fold_level = 2
   let g:magit_default_sections = ['global_help', 'info', 'unstaged', 'staged', 'commit']
 '''
+
+[[plugins]]
+repo = 'jpalardy/vim-slime'
+hook_add = '''
+  let g:slime_target = "tmux"
+  let g:slime_default_config = {"socket_name": "default", "target_pane": "1"}
+'''
