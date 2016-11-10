@@ -45,6 +45,8 @@ set fileencodings=utf-8,iso-2022-jp,sjis,euc-jp
 set expandtab
 set shiftwidth=2
 
+set visualbell
+
 noremap ; :
 noremap : ;
 
