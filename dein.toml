@@ -73,10 +73,9 @@ repo = 'dag/vim-fish'
 repo = 'tomtom/tcomment_vim'
 
 [[plugins]]
-repo = 'nathanaelkane/vim-indent-guides'
+repo = 'Yggdroot/indentLine'
 hook_add = '''
-  let g:indent_guides_enable_on_vim_startup = 1
-  let g:indent_guides_guide_size = 1
+  let g:indentLine_char='┆'
 '''
 
 [[plugins]]
