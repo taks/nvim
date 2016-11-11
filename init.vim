@@ -42,11 +42,14 @@ set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,sjis,euc-jp
 
-set expandtab
-set shiftwidth=2
-
+" BASE {{{
 set visualbell
 
+set expandtab
+set shiftwidth=2
+" }}}
+
+" keybind {{{
 noremap ; :
 noremap : ;
 
@@ -55,6 +58,9 @@ nnoremap k gk
 nnoremap gj j
 nnoremap gk k
 
+set whichwrap=b,s,h,l,<,>,[,]       " カーソルを行頭、行末で止まらないようにする
+
 " 閉じる無効化
 nnoremap ZZ <Nop>
 nnoremap ZQ <Nop>
+" }}}
