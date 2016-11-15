@@ -43,6 +43,12 @@ hook_add = '''
 repo = 'rust-lang/rust.vim'
 
 [[plugins]]
+repo = 'HerringtonDarkholme/yats.vim'
+on_ft = 'typescript'
+[[plugins]]
+repo = 'mhartington/deoplete-typescript'
+
+[[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
