@@ -62,6 +62,9 @@ repo = 'ujihisa/neco-ghc'
 repo = 'eagletmt/ghcmod-vim'
 
 [[plugins]]
+repo = 'ryym/vim-riot'
+
+[[plugins]]
 repo = 'easymotion/vim-easymotion'
 hook_add = '''
   let g:EasyMotion_smartcase = 1
