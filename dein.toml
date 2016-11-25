@@ -21,6 +21,7 @@ repo = 'Shougo/deoplete.nvim'
 hook_add = '''
   let g:deoplete#enable_at_startup = 1
   inoremap <expr><C-j>  pumvisible() ? "\<C-n>" : "<C-j>"
+  inoremap <expr><CR>  pumvisible() ? deoplete#close_popup() : "<CR>"
 '''
 
 [[plugins]]
