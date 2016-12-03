@@ -58,9 +58,25 @@ nnoremap k gk
 nnoremap gj j
 nnoremap gk k
 
+nnoremap ws :<C-u>sp<CR>
+nnoremap wv :<C-u>vs<CR>
+nnoremap ww <C-w>w
+
 set whichwrap=b,s,h,l,<,>,[,]       " カーソルを行頭、行末で止まらないようにする
 
 " 閉じる無効化
 nnoremap ZZ <Nop>
 nnoremap ZQ <Nop>
+
+function! s:toggle_visual()
+  if mode() ==# 'v'
+    return "\<C-v>" 
+  elseif mode() ==# 'V'
+    return "v"
+  else  " mode() ==# "\<C-v>"
+    return "V"
+  endif
+endfunction
+
+vnoremap <expr> t <SID>toggle_visual()
 " }}}
