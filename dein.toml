@@ -26,6 +26,9 @@ hook_add = '''
   let g:deoplete#enable_at_startup = 1
   inoremap <expr><C-j>  pumvisible() ? "\<C-n>" : "<C-j>"
   inoremap <expr><CR>  pumvisible() ? deoplete#close_popup() : "<CR>"
+
+  let g:deoplete#omni#input_patterns = {}
+  let g:deoplete#omni#input_patterns.fsharp = '[^. *\t]\.\w*'
 '''
 
 [[plugins]]
@@ -46,6 +49,14 @@ hook_add = '''
 
 [[plugins]]
 repo = 'rust-lang/rust.vim'
+
+[[plugins]]
+repo = 'fsharp/vim-fsharp'
+build = 'make fsautocomplete'
+on_ft = 'fsharp'
+hook_add = '''
+  au BufNewFile,BufRead *.fs setf fsharp
+'''
 
 [[plugins]]
 repo = 'HerringtonDarkholme/yats.vim'
