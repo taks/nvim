@@ -63,7 +63,7 @@ hook_add = '''
 repo = 'HerringtonDarkholme/yats.vim'
 on_ft = 'typescript'
 [[plugins]]
-repo = 'mhartington/deoplete-typescript'
+repo = 'Quramy/tsuquyomi'
 
 [[plugins]]
 repo = 'cespare/vim-toml'
