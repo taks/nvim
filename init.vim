@@ -46,6 +46,9 @@ set visualbell
 
 set expandtab
 set shiftwidth=2
+
+set conceallevel=0
+let g:vim_json_syntax_conceal = 0
 " }}}
 
 " keybind {{{
