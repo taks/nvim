@@ -33,6 +33,12 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'zchee/deoplete-jedi'
+
+[[plugins]]
+repo = 'fishbullet/deoplete-ruby'
+
+[[plugins]]
 repo = 'vim-scripts/paredit.vim'
 
 [[plugins]]
