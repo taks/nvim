@@ -56,9 +56,6 @@ set virtualedit+=all
 " }}}
 
 " keybind {{{
-noremap ; :
-noremap : ;
-
 nnoremap j gj
 nnoremap k gk
 nnoremap gj j
