@@ -53,6 +53,9 @@ set conceallevel=0
 let g:vim_json_syntax_conceal = 0
 
 set virtualedit+=all
+
+" 保存時、行末の余分なスペースを取り除く
+autocmd BufWritePre * :%s/\s\+$//ge
 " }}}
 
 " keybind {{{
