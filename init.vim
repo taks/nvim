@@ -76,7 +76,7 @@ nnoremap ZQ <Nop>
 
 function! s:toggle_visual()
   if mode() ==# 'v'
-    return "\<C-v>" 
+    return "\<C-v>"
   elseif mode() ==# 'V'
     return "v"
   else  " mode() ==# "\<C-v>"
