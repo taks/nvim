@@ -44,6 +44,9 @@ set fileencoding=utf-8
 set fileencodings=utf-8,iso-2022-jp,sjis,euc-jp
 
 " BASE {{{
+set number
+set list
+set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%,eol:↲
 set visualbell
 
 set expandtab
