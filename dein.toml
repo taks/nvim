@@ -28,8 +28,9 @@ hook_add = '''
   inoremap <expr><C-k>  pumvisible() ? "\<C-p>" : "<C-k>"
   inoremap <expr><CR>  pumvisible() ? deoplete#close_popup() : "<CR>"
 
-  let g:deoplete#omni#input_patterns = {}
-  let g:deoplete#omni#input_patterns.fsharp = '[^. *\t]\.\w*'
+  call deoplete#custom#var('omni', 'input_patterns', {
+    \ 'fsharp': '[^. *\t]\.\w*',
+    \})
 '''
 
 [[plugins]]
